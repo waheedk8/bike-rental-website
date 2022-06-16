@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     
+        
+:root{
+    --yellow:#f9d806;
+    --light-yellow:#ffee80;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+
+*{
+    
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+       
+   
+.login-form-container.active{
+    top:0;
+}
+
+.login-form-container {
+    
+    margin-left: 30%;
+    margin-right: 35%;
+    margin-top: 5%;
+
+}
+.login-form-container form{
+    margin:2rem;
+    text-align: center;
+    padding:2rem;
+    width:40rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    background: #fff;
+}
+
+.login-form-container form .buttons{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+.login-form-container form .btn{
+    display: block;
+    width:100%;
+    margin:.5rem 0;
+}
+
+.login-form-container form .box{
+    margin:.7rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+    border:var(--border);
+    padding:1rem 1.2rem;
+    border-radius: .5rem;
+}
+
+
+
+.login-form-container form h5{
+    padding-bottom:1rem;
+    font-size: 2rem;
+    color:var(--black);
+    text-transform: uppercase;
+}
+
+.login-form-container #close-login-form{
+    position: absolute;
+    top:1.5rem; right:2.5rem;
+    font-size: 5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:var(--light-yellow);
+    color:var(--black);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn:hover{
+    background:var(--yellow);
+}
+    </style>
+    
+</head>
+<body>
+    <div class="login-form-container">
+
+    
+        
+        <span id="close-login-form" class="fas fa-times"></span>
+<form action="">
+    <h5>City</h5>
+    <select name="cars" id="cars" class="box" placeholder="city">
+      <option value="volvo">Chennai</option>
+      <option value="saab">Bangaluru</option>
+      <option value="mercedes">Mumbai</option>
+      <option value="audi">Delhi</option>
+    </select>
+    
+
+<h5>Rent</h5>   
+ <select name="cars" id="cars" class="box">
+      <option value="volvo">Hourly/Day</option>
+      <option value="saab">Weekly</option>
+      <option value="mercedes">Monthly</option>
+    </select>
+
+    
+<h5>Start date</h5>
+ <input type="datetime-local" class="box">
+
+<h5>End date</h5>
+ <input type="datetime-local" class="box">
+
+   <input type="submit" class="btn"  value="RideNow">
+    </form>
+
+
+    
+    </div>
+
+   
+</body>
+</html>
